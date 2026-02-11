@@ -3,6 +3,7 @@
 Minimum Operations
 """
 
+
 def minOperations(n):
     """
     Minimum Operations
@@ -14,11 +15,9 @@ def minOperations(n):
     factor = 2
 
     while n > 1:
-
         while n % factor == 0:
             n //= factor
             operations += factor
-
         factor += 1
 
     return operations
